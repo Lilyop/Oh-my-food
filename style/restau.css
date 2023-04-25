@@ -1,0 +1,322 @@
+@media screen and (min-width: 768px) {
+    .howto__title {
+      text-align: center;
+    }
+  }
+  
+  .howto__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    counter-reset: step;
+  }
+  
+  .howto__list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    cursor: pointer;
+    border: none;
+    /*min-width: 17rem;*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    transition: all 400ms ease-in-out;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    font-weight: 550;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    gap: 1rem;
+    position: relative;
+    white-space: nowrap;
+    margin-left: -1.5rem;
+  }
+  
+  .howto__list li:hover,
+  .howto__list li:focus {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.4);
+  }
+  
+  .howto__list li i {
+    opacity: 0.5;
+    font-size: 1.2rem;
+  }
+  
+  
+  /* Styles for screens with a minimum width of 768px */
+  @media screen and (min-width: 768px) {
+    /* Center the title in the how-to section */
+    .howto__title {
+      text-align: center;
+    }
+  
+    /* Display the how-to list items in a row with equal spacing */
+    .howto__list {
+      justify-content: center;
+      flex-flow: wrap;
+      gap: 3rem;  /* 2.5rem  */
+    }
+  
+    /* Style for each how-to list item */
+    .howto__list li {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      cursor: pointer;
+      border: none;
+      min-width: 17rem;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+      transition: all 400ms ease-in-out;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      background-color: #f2f2f2;
+      gap: 1rem;
+      position: relative;
+      white-space: nowrap;
+      width: 25%; /* Each list item takes up 25% of the width */
+    }
+  }
+  
+  /* Style for the numbered steps in the how-to list */
+  .howto__list li::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    content: counter(step);
+    counter-increment: step;
+    position: absolute;
+    left: -15px;
+    border-radius: 100%;
+    background-color: #9356dc;
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Hover and focus styles for the how-to list items */
+  .howto__list li:focus,
+  .howto__list li:hover {
+    background-color: #f2eafb;
+  }
+  
+  /* Icon styles for the how-to list items on hover and focus */
+  .howto__list li:hover > i,
+  .howto__list li:focus > i {
+    color: #9356dc;
+    opacity: 1;
+  }
+  
+  /* Styles for the restaurants section */
+  .restaurants {
+    background-color: #f2f2f2;
+    padding: 0.5rem;
+    width: auto;
+    margin-top: 3rem; /* ++ */
+  }
+  
+  /* Style for the title in the restaurants section on screens with a minimum width of 768px */
+  @media screen and (min-width: 768px) {
+    .restaurants__title {
+      text-align: center;
+    }
+  }
+  
+  /* Style for the list of restaurants in the restaurants section */
+  .restaurants__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-bottom: 2rem; /* ++ */
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .restaurants__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      /*padding-inline: 10rem;   R */
+    }
+  }
+  
+
+  .new {
+    position: relative;
+  }
+  
+  .new::before {
+    content: "Nouveau";
+    background-color: #99e2d0;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 700;
+    color: #278870;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.2rem;
+  }
+  
+  .card {
+    width: 100%;
+    border-radius: 1.3rem;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 400ms;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card:hover,
+  .card:focus {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+  }
+  
+  .card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.75rem 1.5rem 0.75rem 1rem;
+    height: 5.6rem;
+  }
+  
+  .card__footer-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .card__footer-info h3,
+  .card__footer-info p {
+    font-size: 1.3rem;
+  }
+  
+  .card__footer-like .fa-regular {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .card__footer-like .fa-regular:hover::after,
+  .card__footer-like .fa-regular:focus::after,
+  .card__footer-like .fa-regular:active::after {
+    opacity: 1;
+    animation: like 1000ms 100ms ease-in-out both;
+  }
+  
+  .card__footer-like .fa-regular::after {
+    content: "\f004";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    opacity: 0;
+    z-index: 1;
+    font-size: 2rem;
+    transition: all 100ms ease-in-out;
+  }
+  
+  .card:hover::before,
+  .card:focus::before {
+    animation: shake 150ms 200ms ease-in-out;
+    animation-iteration-count: 4;
+  }
+  
+  .cover {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .cover img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+  }
+  
+  .menus {
+    margin-top: -4rem;
+    border-radius: 3.5rem 3.5rem 0 0;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    z-index: 2;
+    position: relative;
+  }
+  
+  
+  .menus__like {
+    display: grid;
+    place-content: center;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .menus__like .fa-regular {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menus__like .fa-regular::after {
+    content: "\f004";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    opacity: 0;
+    z-index: 1;
+    font-size: 2rem;
+    transition: all 100ms ease-in-out;
+  }
+  
+  .menus__like .fa-regular:hover::after,
+  .menus__like .fa-regular:focus::after,
+  .menus__like .fa-regular:active::after {
+    opacity: 1;
+    animation: like 1000ms 100ms ease-in-out both;
+  }
+  
+  .menus__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* space between */
+    flex-direction: row;
+    padding: 2rem 1rem 2rem 0;
+    border-radius: 2rem 2rem 0 0;
+    width: 100%;
+  }
+  

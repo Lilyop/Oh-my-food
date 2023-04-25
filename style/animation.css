@@ -1,0 +1,247 @@
+/*General*/
+
+/* Animation for shaking element */
+@keyframes shake {
+  25% {
+    transform: translateX(3%);
+  }
+  75% {
+    transform: translateX(-3%);
+  }
+}
+
+/* Animation for scaling and fading in element */
+@keyframes like {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(3);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animation for rotating element */
+@keyframes rotate {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation for fading in element */
+@keyframes fade-in {
+  0% {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for fading out element */
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    z-index: 999;
+  }
+  100% {
+    opacity: 0;
+    z-index: -999;
+  }
+}
+
+/* Animation for jumping element */
+@keyframes jump {
+  0% {
+    transform: translateY(0rem);
+  }
+  25% {
+    transform: translateY(-1.2rem);
+  }
+  100% {
+    transform: translateY(1.2rem);
+  }
+}
+/*Display*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+
+/*Text*/
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin dotted #ff79da;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+
+/*Images*/
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+
+/*Form*/
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: auto;
+  vertical-align: baseline;
+}
+
+button,
+input {
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+body{
+
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) {
+
+  }
+
+
+
+
+

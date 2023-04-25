@@ -1,0 +1,236 @@
+/*@media screen and (min-width: 768px) {
+    .menus__title {
+      width: 50%;
+    }
+  }*/
+  
+  
+  @media screen and (min-width: 1240px) {
+    .menus__title {
+      width: 75%;
+    }
+  }
+  
+  .menus__title h2 {
+    font-family: "shrikhand", sans-serif;
+    font-weight: 400;
+  }
+  
+  .menus .meals-wrapper {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  
+  @media screen and (min-width: 1240px) {
+    .menus .meals-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      gap: 1.5rem;
+    }
+  }
+  
+  .menus article {
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  
+  
+  @media screen and (min-width: 1240px) {
+    .menus article {
+      width: 31%;
+    }
+  }
+  
+  .menus article h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 0.3rem;
+    border-bottom: 3.5px solid #99e2d0;
+    width: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .meals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    cursor: pointer;
+    border: none;
+    /*min-width: 17rem;*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    transition: all 400ms ease-in-out;
+    background-color: #fff;
+    border-radius: 1rem;
+    /*max-width: 100%;  R */
+    margin-bottom: 2rem;
+    overflow: hidden;
+    height: 6rem;
+    animation: fade-in 2000ms ease-in-out both;
+    margin-left: -2.5rem; /* ++ */
+  }
+  
+  .meals:hover, .meals:focus {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.4);
+  }
+  
+  .meals:nth-child(1) {
+    animation-delay: 200ms;
+  }
+  .meals:nth-child(2) {
+    animation-delay: 400ms;
+  }
+  .meals:nth-child(3) {
+    animation-delay: 600ms;
+  }
+  .meals:nth-child(4) {
+    animation-delay: 800ms;
+  }
+  .meals:nth-child(5) {
+    animation-delay: 1000ms;
+  }
+  .meals:nth-child(6) {
+    animation-delay: 1200ms;
+  }
+  .meals:nth-child(7) {
+    animation-delay: 1400ms;
+  }
+  .meals:nth-child(8) {
+    animation-delay: 1600ms;
+  }
+  .meals:nth-child(9) {
+    animation-delay: 1800ms;
+  }
+  .meals:nth-child(10) {
+    animation-delay: 2000ms;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .meals {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 1240px) {
+    .meals {
+      max-width: 30rem;
+    }
+  }
+  
+  .meals:hover .meals__selection,
+  .meals:focus .meals__selection {
+    margin-right: 0;
+  }
+  
+  .meals:hover .meals__selection i,
+  .meals:focus .meals__selection i {
+    animation: rotate 300ms 100ms ease-in-out both;
+  }
+  
+  .meals__info {
+    padding: 1rem 0 1rem 1rem;
+    min-width: 60%;
+  }
+  
+  .meals__info h4,
+  .meals__info p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .meals__info p {
+    font-size: 0.8rem;
+  }
+  
+  
+  /* For screens with a minimum width of 768px */
+  @media screen and (min-width: 768px) {
+    /* Styles for .meals__info h4 */
+    .meals__info h4 {
+      font-size: 1.1rem;
+    }
+  
+    /* Styles for .meals__info p */
+    .meals__info p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Styles for .meals__selection */
+  .meals__selection {
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    margin-right: -5rem;
+    transition: all 400ms ease-in-out;
+  }
+  
+  /* Styles for .meals__selection-price */
+  .meals__selection-price {
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Styles for .meals__selection-check */
+  .meals__selection-check {
+    height: 6rem;
+    font-size: 1.5rem;
+    background-color: #99e2d0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 4.5rem; 
+    border-radius: 0 1rem 1rem 0;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .meals__selection-price {
+      font-size: 1.2rem;
+    }
+    .meals__selection-check {
+      font-size: 2rem;
+    }
+  }
+  
+  .order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+    border: none;
+    /*min-width: 17rem;  removed */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    transition: all 400ms ease-in-out;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    padding: 1.3rem 2.5rem;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+    /*width: 18rem;  removed*/
+    margin-bottom: 4rem;
+  }
+  .order-btn:hover, .order-btn:focus {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.4);
+  }
+  .order-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.75;
+  }  
